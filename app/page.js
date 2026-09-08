@@ -124,7 +124,7 @@ export default function Home() {
                 </div>
                 <div className="bg-white p-6 rounded-lg border border-gray-200">
                   <h4 className="font-bold text-lg mb-2">Location</h4>
-                  <p className="text-gray-600">Dindigul, Tamil Nadu • India</p>
+                  <p className="text-gray-600">Thanjavur, Tamil Nadu • India</p>
                 </div>
               </div>
             </div>
