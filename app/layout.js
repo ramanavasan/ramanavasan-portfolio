@@ -22,12 +22,12 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <meta charSet="UTF-8" />
-        <meta name="theme-color" content="#2563eb" />
+        <meta name="theme-color" content="#08090c" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' font-weight='bold' fill='%232563eb'>R</text></svg>" />
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' font-weight='bold' fill='%23e0b64a'>R</text></svg>" />
       </head>
-      <body className="antialiased">
+      <body className="antialiased bg-[#08090c] text-gray-100">
         {children}
       </body>
     </html>

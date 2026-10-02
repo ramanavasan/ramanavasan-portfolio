@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"],
+      "@designcodeio/threeui": ["./src/shaders/neuform-isolated/NeuformIsolatedEffects.tsx"],
+      "@designcodeio/threeui/style.css": ["./src/shaders/threeui.css"]
+    }
+  }
+}

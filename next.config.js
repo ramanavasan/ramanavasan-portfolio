@@ -1,3 +1,5 @@
+const path = require('path');
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
@@ -5,6 +7,18 @@ const nextConfig = {
   // Image optimization
   images: {
     unoptimized: true,
+  },
+
+  webpack: (config) => {
+    config.module.rules.push({
+      test: /\.html$/,
+      type: 'asset/source',
+    });
+
+    config.resolve.alias['@designcodeio/threeui/style.css'] = path.resolve(__dirname, 'src/shaders/threeui.css');
+    config.resolve.alias['@designcodeio/threeui'] = path.resolve(__dirname, 'src/shaders/neuform-isolated/NeuformIsolatedEffects.tsx');
+
+    return config;
   },
 
   // Headers for SEO and performance
